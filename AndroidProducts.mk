@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_jasmine_sprout.mk
+    $(LOCAL_DIR)/derp_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_jasmine_sprout-user \
-    aosip_jasmine_sprout-userdebug \
-    aosip_jasmine_sprout-eng
+    derp_jasmine_sprout-user \
+    derp_jasmine_sprout-userdebug \
+    derp_jasmine_sprout-eng
