@@ -17,9 +17,9 @@
 
 # inherit device config for Project-Awaken
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_jasmine_sprout.mk
+    $(LOCAL_DIR)/derp_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_jasmine_sprout-user \
-    awaken_jasmine_sprout-userdebug \
-    awaken_jasmine_sprout-eng
+    derp_jasmine_sprout-user \
+    derp_jasmine_sprout-userdebug \
+    derp_jasmine_sprout-eng

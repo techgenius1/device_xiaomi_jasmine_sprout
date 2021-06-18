@@ -14,13 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Density
+TARGET_SCREEN_DENSITY := 400
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit some common stuff from Project-Awaken
-AWAKEN_BUILD_TYPE := OFFICIAL
-$(call inherit-product, vendor/awaken/config/common.mk)
-$(call inherit-product, vendor/awaken/config/gsm.mk)
+# Official-ify
+DERP_BUILDTYPE := Official
+
+# Inherit some common DerpFest stuff
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Gapps
 USE_GAPPS := true
@@ -29,6 +33,7 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
+GAPPS_VARIANT := micro
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -42,7 +47,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := awaken_jasmine_sprout
+PRODUCT_NAME := derp_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 

@@ -35,6 +35,10 @@ ENABLE_AB := true
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
