@@ -5,11 +5,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# inherit MI A2 device config for ShapeShiftOS
+# inherit MI A2 device config for DerpFest
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_jasmine_sprout.mk
+    $(LOCAL_DIR)/derp_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_jasmine_sprout-user \
-    ssos_jasmine_sprout-userdebug \
-    ssos_jasmine_sprout-eng
+    derp_jasmine_sprout-user \
+    derp_jasmine_sprout-userdebug \
+    derp_jasmine_sprout-eng
