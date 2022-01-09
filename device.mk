@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.verity.rc
 
+# Remove few packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
