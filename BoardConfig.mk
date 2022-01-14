@@ -9,6 +9,8 @@ include device/xiaomi/wayne-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
+BUILD_BROKEN_DUP_RULES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
