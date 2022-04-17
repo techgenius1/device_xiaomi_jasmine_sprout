@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit from jasmine_sprout device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := jasmine_sprout
